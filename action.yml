@@ -1,0 +1,9 @@
+name: 'PR Issue Linker'
+description: 'A GitHub action that links a pull request to issues referenced within its title and body.'
+inputs:
+  repo-token:
+    description: 'The github token'
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
