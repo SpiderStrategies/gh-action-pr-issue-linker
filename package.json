@@ -1,0 +1,26 @@
+{
+  "name": "gh-action-pr-issue-linker",
+  "version": "1.0.0",
+  "description": "Github action to link a pull request to any issues matched within the PR's title or description",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js",
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpiderStrategies/gh-action-pr-issue-linker.git"
+  },
+  "author": "Nathan Bowser <nathan.bowser@spiderstrategies.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SpiderStrategies/gh-action-pr-issue-linker/issues"
+  },
+  "homepage": "https://github.com/SpiderStrategies/gh-action-pr-issue-linker#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1",
+    "@vercel/ncc": "^0.34.0",
+    "gh-action-components": "github:SpiderStrategies/gh-action-components#b461d5b0f9ee17c2c6d9114ae205f725342ee6bd"
+  }
+}
